@@ -1,37 +1,32 @@
 password = "python123"
 m = 3
-geuss = ""
-    # ///////////////////////guess 1
 
+# ///////////////////////guess 1
 guess = input("Please enter your guess : ")
-print(type(guess))
 
-if geuss == password:
+if guess == password:
     print("You win!!!")
-else :
+else:
     m -= 1
     print("Try again")
-    print(m , "chances")
+    print(m, "chances left")
 
     # ///////////////////////guess 2
+    guess = input("Please enter your guess : ")
 
-guess = input("Please enter your guess : ")
+    if guess == password:
+        print("You win!!!")
+    else:
+        m -= 1
+        print("Try again")
+        print(m, "chances left")
 
-if geuss == password:
-    print("You win!!!")
-else :
-    m -= 1
-    print("Try again")
-    print(m , "chances")
+        # ///////////////////////guess 3
+        guess = input("Please enter your guess : ")
 
-    # ///////////////////////guess 3
-
-guess = input("Please enter your guess : ")
-
-if geuss == password:
-    print("You win!!!")
-else :
-    m -= 1
-    print("You lost!")
-    print(m , "chances")
-
+        if guess == password:
+            print("You win!!!")
+        else:
+            m -= 1
+            print("You lost!")
+            print(m, "chances left")
